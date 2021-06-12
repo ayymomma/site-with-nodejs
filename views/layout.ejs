@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <title>SC Mircea & Ana SRL</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css"
+            href="/public/css/still.css"/>
+    </head>
+    
+    <div>
+        <div class="title">
+            <h1>SC Mircea&Ana SRL</h1>
+        </div>
+        <div class="loginClass">
+            <form action="/" method="POST">
+                <% if(typeof user != 'undefined') {%>
+                <p>
+                    <%="Logat ca "+ user.utilizator +"."%>
+                    <a href="/logout">Delogare</a>
+                    <br>
+                    <%="Bine ai venit, "+ user.nume_complet +"!"%>
+
+                    <% if(user.grad == 'admin'){ %>
+                        <div class="buton-autentificare">
+                            <a href="/admin">Admin</a>
+                        </div>
+                    <% }%>
+                </p>
+                <% }else{%>
+                    <div class="buton-autentificare">
+                        <a href="/autentificare">Autentificare</a>
+                    </div>
+                <%}%>
+
+            </form>
+        </div>
+
+        <div class="topnav">
+            <a class="active" href="/">Acasa</a>
+            <a href="/noutati">Noutati</a>
+            <a href="/produse">Produse</a>
+            <a href="/contact">Contact</a>
+            <a href="/despre">Despre</a>
+            <% if(typeof user != 'undefined') {%>
+                <a href="/vizualizare_cos">Vizualizare cos</a>
+            <% }%>
+        </div>
+
+
+        <header>
+            <img src="https://images.prismic.io/baker-tilly-www/5cac6911-a2df-46c4-90ea-6276df43a1f0_agribusiness-equipment.jpg?auto=compress,format&rect=0,153,2000,814&w=1670&h=680" alt="logo" width="100%" height="500">
+
+        </header>
+        
+        <%- body %>
+        <br><br>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Follow us</h3>
+                        <a href="https://www.facebook.com/adrian.mircea.395">Facebook</a><br>
+                        <a href="https://www.instagram.com/adrian24.02/"> Instagram</a>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Mircea Mihai Adrian</p>
+            </div>
+        </div>
+    </div>      
+     
+</html>

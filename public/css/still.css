@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic');
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.buton-autentificare a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.buton-autentificare a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+html            { 
+    font-family: 'Zen Dots', cursive; 
+    background-color: #074617;
+}
+
+
+.loginClass { 
+    color: aliceblue;
+    padding-top: 5px; 
+    text-align: right;
+}
+
+.title h1{
+    color: rgb(255, 255, 255);     
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.footer{    
+     background:#04AA6D;     
+     color: #0a0909;     
+     font-size: 14px;     
+     padding: 60px 0 20px; 
+} 
+
+.footer p{     
+    color: #070606; 
+} 
+
+.footer h3{     
+    color: rgb(15, 13, 13);     
+    margin-bottom: 20px; 
+    text-align: center;
+} .footer-col-1, 
+
+.adauga-produs h1{
+    color: rgb(255, 255, 255);     
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.adauga-produs form{
+    color: rgb(255, 255, 255);     
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.adauga-produs button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #04AA6D;;
+}
+
+.adauga-produs button:hover{
+    background-color: #3e8e41
+}
+
+.adauga-produs button:active {
+    background-color: #4CAF50;
+    box-shadow: 0 5px #04AA6D;
+    transform: translateY(4px);
+  }
+
+
+.footer hr{     
+    border: none;     
+    background: #020202;     
+    height: 1px;     
+    margin: 20px 0; 
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  
+input{
+    border:none;
+    outline:none;
+    display:inline-block;
+    height:34px;
+    vertical-align:middle;
+    position:center;
+    bottom:14px;
+    right:9px;
+    border-radius:22px;
+    width:220px;
+    box-sizing:border-box;
+    padding:0 18px; 
+}
+
+
+.autentificare h1{
+    color: rgb(255, 255, 255);     
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.autentificare form{
+    color: rgb(255, 255, 255);     
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.autentificare button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #04AA6D;;
+}
+
+.autentificare button:hover{
+    background-color: #3e8e41
+}
+
+.autentificare button:active {
+    background-color: #4CAF50;
+    box-shadow: 0 5px #04AA6D;
+    transform: translateY(4px);
+}
+
+.home-description {
+    max-width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -245px;
+    color: rgb(255, 255, 255);
+}
+
+.noutati-description{
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    color: rgb(212, 209, 209);
+    font-size: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.contact-content{
+    max-width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin-left: -245px;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.contact-content .intrebari{
+    padding-top: 15%;
+    margin-right: 60%;
+}
+.contact-content .corespondenta{
+    padding-top:25%;
+    margin-left: 20%;
+}
+
+.sides-container-activitate {
+    display: flex;
+}
+
+.sides-container-activitate .right-side {
+    padding-top: 2%;
+    margin-right: 20%;
+    color: white;
+}
+.sides-container-activitate .left-side {
+    margin-left: 20%;
+    color: white;
+}
+.sides-container-bonus {
+    display: flex;
+}
+
+.sides-container-bonus .right-side {
+    padding-top: 2%;
+    margin-right: 20%;
+    color: white;
+}
+.sides-container-bonus .left-side {
+    margin-left: 20%;
+    margin-top: 8%;
+    color: white;
+}
+
+.sides-container-investitii{
+    display: flex;
+}
+.sides-container-investitii .left-side{
+    padding-top: 8%;
+    color: white;
+    margin-left: 20%;
+}
+.sides-container-investitii .right-side{
+    margin-right: 20%;
+    color: white;
+}
+.sides-container-seceta {
+    display: flex;
+}
+
+.sides-container-seceta .left-side{
+    padding-top: 8%;
+    color: white;
+    margin-left: 20%;
+}
+.sides-container-seceta .right-side{
+    margin-right: 20%;
+    margin-top: 12%;
+    color: white;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+    color: #009879;
+}
+
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.produse h3{
+    color: #009879;     
+    margin-bottom: 20px; 
+    text-align: center;
+    font-size: 25px;
+}
+
+.adaugare-cos button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #009879;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+    font-size: 18px;
+    margin-left:70%;
+  }
+  
+  .adaugare-cos button:hover {
+    opacity: 0.7;
+  }
+th.adauga{
+      padding-left: 15%;
+}
+
+.button-trimite-comanda button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #009879;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 45%;
+    width: 10%;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.button-trimite-comanda button:hover{
+    opacity: 0.7;
+}

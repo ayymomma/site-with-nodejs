@@ -1,0 +1,45 @@
+<% if(typeof tabel !== 'undefined') {%>
+	<div class="produse">
+		<h3>Catalog Produse</h3>
+	</div>
+	<table class="styled-table">
+		<thead>
+			<tr>
+				<th scope="col">Produs</th>
+				<th scope="col">Pret</th>
+				<th scope="col">Cantitate</th>
+				<th scope="col">Perioada de livrare</th>
+
+			</tr>
+		</thead>
+	
+		<% cnt = 0; %>
+		<% objects.forEach( ob =>{ %>
+		<tbody>
+			<tr class="active-row">
+				<td scope="row">
+					<%= ob.produs %>
+				</td>
+				<td>
+					<%= ob.pret %>
+				</td>
+				<td>
+					<%= ob.cantitate %>
+				</td>
+				<td>
+					<%= ob.livrare %>
+				</td>
+			</tr>
+		</tbody>
+		<% cnt++;}); %>
+	</table>
+
+	<div class="button-trimite-comanda">
+		<form action="/trimite-comanda" method="GET">
+			<button>Trimite comanda</button>
+		</form>
+		<form action="/goleste-cos" method="GET">
+			<button>Sterge cos</button>
+		</form>
+	</div>
+<%}%>

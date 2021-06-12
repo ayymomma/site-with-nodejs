@@ -1,0 +1,52 @@
+<% if(typeof tabel !== 'undefined') {%>
+	<div class="produse">
+		<h3>Catalog Produse</h3>
+	</div>
+	<table class="styled-table">
+		<thead>
+			<tr>
+				<th scope="col">Produs</th>
+				<th scope="col">Pret</th>
+				<th scope="col">Cantitate</th>
+				<th scope="col">Perioada de livrare</th>
+				<th scope="col" class="adauga">Adaugă în coș</th>
+
+			</tr>
+		</thead>
+	
+		<% cnt = 0; %>
+		<% objects.forEach( ob =>{ %>
+		<tbody>
+			<tr class="active-row">
+				<td scope="row">
+					<%= ob.produs %>
+				</td>
+				<td>
+					<%= ob.pret %>
+				</td>
+				<td>
+					<%= ob.cantitate %>
+				</td>
+				<td>
+					<%= ob.livrare %>
+				</td>
+				<td>
+					<div class="adaugare-cos">
+						<% if(typeof user !== 'undefined') {%>    
+							<form action="/adaugare_cos" method="POST">
+								<input type="hidden" name="id" value = <%= cnt %>>
+								<button type="submit">Adaugă în coș!</button>	
+							</form>
+						<%} else {%>
+							<form action="/adaugare_cos" method="POST">
+								<input type="hidden" name="id" value="idProdus">
+								<button type="submit" disabled>Adaugă în coș!</button>	
+							</form>	
+							<%}%>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+		<% cnt++;}); %>
+	</table>
+<%}%>

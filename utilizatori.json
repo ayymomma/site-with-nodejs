@@ -1,0 +1,6 @@
+[
+    { "utilizator": "andrei", "nume_complet": "Andrei Constantin", "parola": "andrei1", "grad": "user"},
+    { "utilizator": "costel", "nume_complet": "Costel Amariei","parola": "costel2", "grad": "user"},
+    { "utilizator": "ionel3", "nume_complet": "Ionel Mircea","parola": "ionel3", "grad": "user"},
+    { "utilizator": "adrian", "nume_complet": "Adrian Mircea","parola": "adrian", "grad": "admin"}
+]
